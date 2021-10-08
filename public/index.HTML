@@ -6,22 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NasaAPI</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
     <style>
+        
         body {
-            background-image: url("../ASSETS/space.jpg");
+            background-image: url("/public/assets/space.jpg");
         }
     </style>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="search">       
+    <div class="space">       
         <h1>Blast from the Past</h1>     
+       <form>
        <input id="date" type = "text" placeholder="Enter Date"/>
        <button id="search">
            Search
        </button>
+    </form>
+    <div class="Date">
+
+    </div>
     </div>
 
     <div id="content"></div>
+    <script src="script.js"></script>
 </body>
 </html>

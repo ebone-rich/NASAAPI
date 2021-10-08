@@ -1,15 +1,18 @@
-//let fetchDate() {
+//let grabdate() {
 //    return document.getElementById{}.value;
 //}
 
-let grabDate = document.querySelector("#search")
+ const grabDate = document.getElementById("search");
+    console.log(grabDate)
 
-grabDate.addEventListener("click", ()=>) {
-    console.log("clicked");
-    apiRequest()
-}
+grabDate.addEventListener("click", apiRequest)
+//    console.log("clicked");
+  //  apiRequest
+//)}
 
-async function apiRequest() {
+async function apiRequest(e) {
+    console.log("hello")
+    e.preventDefault()
     let API_KEY = "FZjFzOpNszAHaI7IWM0p1ZQTfcJVlVXOlHTeccf8"
     let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`);
     console.log(response)
@@ -17,8 +20,11 @@ async function apiRequest() {
     console.log(blast)
     getAPIdata(blast)
 }
+//apiRequest()
 
 function getAPIdata(blast) {
-    document.querySelector("search").innerHTML = blast.explanation
+   document.querySelector("Date").innerHTML = blast.explanation
+   document.querySelector("Date").innerHTML += `img src=${blast.url}`;
 }
+
   
