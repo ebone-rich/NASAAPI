@@ -23,8 +23,20 @@ async function apiRequest(e) {
 //apiRequest()
 
 function getAPIdata(blast) {
-   document.querySelector("Date").innerHTML = blast.explanation
-   document.querySelector("Date").innerHTML += `img src=${blast.url}`;
-}
+   document.getElementById("imgContainer").innerHTML = blast.explanation
+   document.getElementById("img").src= blast.url
 
+}
+/*   let past = document.getElementById(Date)
+   past.innerhtml ='';
+   for (let each of Date) {
+     let */
+     
   
+   //Date.appendChild()blast;
+ //document.getElementById("content").innerHTML += `img src=${blast.url}`;
+
+
+/*quoteContainer.appendChild(quote);
+quoteContainer.appendChild(quoteBy);
+quoteContainer(img);*/
