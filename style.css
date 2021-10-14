@@ -1,0 +1,16 @@
+html {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Staatliches', cursive;
+    color: blue;
+    
+}
+background  {
+    max-width: 100%, height: auto,  display:block
+
+}
+
+.search {
+ margin: auto;
+ text-align: center;
+}
